@@ -1,0 +1,98 @@
+.dDay-box {
+    width: 90%;
+    height: 450px;
+    max-height: 400px;
+    overflow: auto;
+    background-color: white;
+    opacity: 0.7;
+    margin-top: 5%;
+    border-radius: 1rem;
+    border: 10px solid rgb(248, 215, 253);
+}
+
+.dDay-add {
+    width: 70%;
+    font-size: var(--main-font);
+    display: flex;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.dDay-add i:hover {
+    color: #01ac34 !important;
+}
+
+.dDay-title {
+    font-weight: bold;
+    margin-top: 1.5%;
+}
+
+.fa-plus-circle {
+    margin-top: 2.5%;
+    margin-left: 5%;
+}
+
+.dDay-add span {
+    margin-right: 50px;
+}
+
+#dDay-form,
+#dDay-display {
+    margin-top: 15px;
+    border-bottom: none;
+    padding: 0;
+    width: 90%;
+}
+
+#dDay-list li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+#dDay-list input[type="text"] {
+    width: 100px;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.4);
+    margin: 0 8px;
+}
+
+#dDay-list input[type="date"] {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 120px;
+}
+
+
+#dDay-name {
+    width: 120px;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.4);
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+#dDay-list .fa-check-square {
+    margin-right: 11px;
+    color: #01ac34;
+}
+
+
+#dDay-display li {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    padding-right: 0;
+    margin-bottom: 12px;
+}
+
+#dDay-display h1 {
+    width: 50%;
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+/* D-day End */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quotes.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/dDay.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="content">
+        <main class="main">
+            <section class="content-left"> <!--왼쪽-->
+                <!-- clock__box -->
+                <div class="div4 main_flex clock__outer">
+                  <div class="box main_flex" id="clock__box">
+                    <h2 id="clock">00:00:00</h2>
+                    <h3 id="date"></h3>
+                  </div>
+                </div>
+                <div class="div5 flex">
+                <div id="quote" class="quote">
+                    <span class="quoto"></span><br>
+                    <span class="quoto-detail"></span>
+                </div>
+                <div class="randomImg">
+                  <div class="box" id="img__box">
+                  </div>
+              </div>
+               
+            </section>
+            <section class="content-center">
+              <div id="first_window" class="modal_overlay">
+                <form class="hidden" id="login-form">
+                    <input required maxlength="15" class="login-input" type="text" placeholder="What is your name?">
+                    </form>
+                </div>
+                      <div class="btn">
+                        <button class="logout" type="submit">logout</button>
+                      </div>
+                      <h2 class="hidden" id="greeting"></h2>
+                <div class="list-back">
+                  <form id="todo-form" class="text-box">
+                    <input type="text" class="text-search" placeholder="Write a To Do and Press Enter" required /> 
+                  </form>
+                <div class="center-box">
+                  <ul id="todo-list" class="list"></ul>
+                </div>
+              </div>
+            </section>
+            <section class="content-right">
+              <div id="weather" class="weather">
+                <p class="weather1"></p>
+                <p class="weather1"></p>
+                <p class="weather1"></p>
+                <p class="weather1"></p>
+                <p class="weather1"></p>
+                <p class="weather1"></p>
+                  <img class="weather__icon" src="${data.icon}" alt="">
+              </div>
+              <div class="dDay-box box .customized-scrollbar">
+                <div class="dDay-add">
+                  <span class="dDay-title">디데이 계산기</span>
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+                <form id="dDay-form">
+                  <ul id="dDay-list"></ul>
+                </form>
+                  <ul id="dDay-display"></ul>
+              </div>  
+            </section>
+        </main> 
+    </div>
+    <script src="https://kit.fontawesome.com/bc9a5bcb55.js" crossorigin="anonymous"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/dDay.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

@@ -51,14 +51,14 @@ const quotes = [
         quote: "오늘의 고통을 참고 인내해야 함은 하늘나라가 내게 있기 때문입니다.",
         author: "어머니 교훈 중 열세 번째 교훈",
     },
-];
+]; // quote, author를 만들어 quotes에 저장
 
-const quote = document.querySelector("#quote span:last-child");
-const author = document.querySelector("#quote span:first-child");
+const quote = document.querySelector("#quote span:last-child"); // querySelector함수 통해서 #quote span:last-child 요소를 찾아 quote에 저장
+const author = document.querySelector("#quote span:first-child"); // querySelector함수 통해서 #quote span:first-child 요소를 찾아 author에 저장
 
-const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];
+const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)]; // 랜덤 함수를 만들고 todaysQuote에 저장
 
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+quote.innerText = todaysQuote.quote; // todaysQuote의 quote를 표시
+author.innerText = todaysQuote.author; // todaysQuote의 author를 표시
 
   

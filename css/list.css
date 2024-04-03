@@ -4,7 +4,7 @@
 
 .list-back {
     width: 92%;
-    height: 650px;
+    height: 750px;
     background-color: white;
     border-radius: 1rem;
     margin-left: 2%;
@@ -43,7 +43,7 @@
     /* 리스트 스크롤 */
     overflow: auto;
     width: 150%;
-    height: 560px;
+    height: 650px;
     margin-right: 3%;
     border-radius: 1rem;
     opacity: 1;
